@@ -1,8 +1,8 @@
-import axios from 'axios';
+import superagent from 'superagent';
 
 (async () => {
 try {
-    const response = await axios.get('https://google.com');
+    const response = await superagent.get('https://google.com');
     console.log(response);
 } catch (error) {
     console.error(error);
